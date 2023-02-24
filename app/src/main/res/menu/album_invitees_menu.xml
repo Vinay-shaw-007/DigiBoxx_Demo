@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/removeUser"
+        android:title="@string/remove_user"
+        android:enabled="true"/>
+    <item
+        android:id="@+id/blockUser"
+        android:title="@string/block_user"
+        android:enabled="false"
+        android:visible="false"/>
+</menu>

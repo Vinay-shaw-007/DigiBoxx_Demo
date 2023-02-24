@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="carder_corner">50dp</dimen>
+    <dimen name="top">8dp</dimen>
+    <dimen name="iconSize">40dp</dimen>
+    <dimen name="iconSizeSmall">30dp</dimen>
+    <dimen name="standardSize">16dp</dimen>
+    <dimen name="standardSizeSmall">8dp</dimen>
+
+    <dimen name="profile_title">23dp</dimen>
+    <dimen name="meta_count">20dp</dimen>
+    <dimen name="dimen_40dp">40dp</dimen>
+    <dimen name="ic_plus_width">28dp</dimen>
+
+    <dimen name="actionBarSize">60dp</dimen>
+    <dimen name="collapsingToolbarLayoutMediumSize">112dp</dimen>
+</resources>

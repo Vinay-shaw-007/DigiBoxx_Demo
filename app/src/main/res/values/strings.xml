@@ -1,0 +1,808 @@
+<resources>
+
+    <string name="Search">Search</string>
+    <string name="app_name">DigiBoxx</string>
+    <string name="get_started">Get Started</string>
+    <string name="Workspace">Digispace</string>
+    <string name="Forgot_password"><u>Forgot password?</u></string>
+    <string name="Submit">Submit</string>
+    <string name="Enter_your">Enter your</string>
+    <string name="Continue">Continue</string>
+    <string name="recovery_message">One time password has been sent to your registered Mobile Number.</string>
+    <string name="Reset">Reset</string>
+    <string name="Quick_access">Quick Access</string>
+    <string name="quick_access_subtitle">Assets modified in the last 7 days</string>
+    <string name="Myboxx">MyBoxx</string>
+    <string name="mybox_subtitle">Find and share assets</string>
+    <string name="Resources">Resources</string>
+    <string name="resources_subtitle">Find all your assets</string>
+    <string name="Starred">Starred</string>
+    <string name="starred_subtitle">Flag critical assets</string>
+    <string name="Logout">Logout</string>
+    <string name="Upgrade">Upgrade</string>
+    <string name="upgrade_link" translatable="false"><u>Upgrade</u></string>
+    <string name="English">English - EN</string>
+    <string name="HindiL">हिन्दी - HI</string>
+    <string name="MarathiL">मराठी - MR</string>
+    <string name="KannadaL">ಕನ್ನಡ - KN</string>
+    <string name="MalayalamL">മലയാളം - ML</string>
+    <string name="OriyaL">ଓଡିଆ - OR</string>
+    <string name="TamilL">தமிழ் - TA</string>
+    <string name="TeluguL">తెలుగు - TE</string>
+    <string name="BanglaL">বাংলা - BN</string>
+    <string name="Try_Again">Try Again</string>
+    <string name="Incorrect_workspace">Incorrect Digispace</string>
+    <string name="workspace_mess">Details entered does not match with our records</string>
+    <string name="Incorrect_password">Incorrect password</string>
+    <string name="Create_folder">Create Folder</string>
+    <string name="rename">Rename</string>
+    <string name="Folder_Name">Folder name</string>
+    <string name="create_new_folder">Create Folder</string>
+    <string name="upload_new_file">Upload File(s)</string>
+    <string name="delete">Delete</string>
+    <string name="restore">Restore</string>
+    <string name="Delete_permenantly">Delete permanently</string>
+    <string name="Share">Share</string>
+    <string name="emplty">Empty Here</string>
+    <string name="overview">Overview</string>
+    <string name="embed">Embed</string>
+    <string name="comments">Comments</string>
+    <string name="file_tags">File tags</string>
+    <string name="file_name">File name</string>
+    <string name="Description">Description</string>
+
+    <string name="activity_logs">Activity logs</string>
+    <string name="file_viewed">File viewed</string>
+    <string name="Copied">Copied</string>
+    <string name="file_downloaded">File downloaded</string>
+    <string name="enter_email_address">Enter email address</string>
+    <string name="cancel">Cancel</string>
+    <string name="Are_you_sure">Are you sure?</string>
+    <string name="commented_message" translatable="false">You and %s others commented on this file</string>
+    <string name="download_messages" translatable="false">You and %s others downloaded this file</string>
+    <string name="viewed_messgae" translatable="false">You and %s others viewed this file</string>
+    <string name="Download_in_process">Download in process</string>
+    <string name="download_notification">You will get a notification once the download is complete</string>
+    <string name="Okay_Got_It">Okay, Got It</string>
+    <string name="delete_permission">"You don't have an access to delete"</string>
+    <!--    <string name="embed_message">Use the embed feature to increase engagement \nChoose a file/folder from DigiBoxx or from the Device and share it with your connections</string>-->
+    <string name="organising_better">Organising Better</string>
+    <string name="Sort_by">Sort by</string>
+    <string name="size">Size :</string>
+    <string name="Name">Name</string>
+    <string name="type">Type</string>
+    <string name="Apply">Apply</string>
+    <string name="profile_updated_mess">Profile updated Successfully</string>
+    <string name="Storage_utilized">Storage utilized</string>
+    <string name="Storage_remaining">Storage remaining</string>
+    <string name="Activity_graph">Activity Graph</string>
+    <string name="activity_message">Track and monitor your team’s usage and output over time by assets uploaded and assigned.</string>
+    <string name="activity_message_free_paid" translatable="false">Track and monitor your usage and output over time by assets uploaded and assigned.</string>
+    <string name="Mobile_number">Mobile number</string>
+    <string name="Recovery_code_will_expire_time">You can resend OTP in  </string>
+    <string name="seconds">" seconds"</string>
+    <string name="Email_address">Email address</string>
+    <string name="email_send">Email sent</string>
+    <string name="OK">Ok</string>
+    <string name="Reset_Password">Reset Password</string>
+    <string name="password_chnaged_successfully">Password has been changed successfully</string>
+    <string name="No_result_found">No Results!!</string>
+    <string name="Assets">Assets</string>
+    <string name="Pie">Pie</string>
+    <string name="Graph">Graph</string>
+    <string name="All_time">All time</string>
+    <string name="Week">Week</string>
+    <string name="Month">Month</string>
+    <string name="Date_Range">Date Range</string>
+    <string name="Assets_uploaded">Assets uploaded</string>
+    <string name="uploaded">Uploaded</string>
+    <string name="assigned">Assigned</string>
+    <string name="View">View</string>
+    <string name="Organization">Organization</string>
+    <string name="Detailed_Analytics">Detailed Analytics</string>
+    <string name="Assets_type">Assets type</string>
+    <string name="Users">Users</string>
+    <string name="Department">Department</string>
+    <string name="assetUploaded">Assets uploaded</string>
+    <string name="roles">Roles</string>
+    <string name="designation">Designation</string>
+    <string name="departments">Departments</string>
+    <string name="create_new_department">Create new department</string>
+    <string name="department">Department</string>
+    <string name="full_name">Full name</string>
+    <string name="role">Role</string>
+    <string name="password">Password</string>
+    <string name="allocate_memory">Allocate memory</string>
+    <string name="notifications">Notifications</string>
+    <string name="Change_Password">Change Password</string>
+    <string name="Old_Password">Old Password</string>
+    <string name="New_Password">New Password</string>
+    <string name="Confirm_Password">Confirm new password</string>
+    <string name="Feedback">Feedback</string>
+    <string name="subscription">Subscription</string>
+    <string name="request_pending">Requests pending</string>
+    <string name="file_format">File format</string>
+    <string name="file_size">File size</string>
+    <string name="Create_new_user">Create a new user</string>
+    <string name="team">Team</string>
+    <string name="account">Account</string>
+    <string name="Profile">Profile</string>
+    <string name="Dashboard">Dashboard</string>
+    <string name="Setting">Settings</string>
+    <string name="Team">Team</string>
+    <string name="Help_Center">Help Center</string>
+    <string name="user_end_date">User end date</string>
+    <string name="assetsAssigned">Assets assigned</string>
+    <string name="Change_Your_Current_Password">Change your current password</string>
+    <string name="No_Data_available">No Data available</string>
+    <string name="selectFolderColor">Select folder color</string>
+    <string name="selectAll">Select All</string>
+    <string name="twoFactorAuthentication">Two-factor authentication</string>
+    <string name="clearAll">Clear All</string>
+    <string name="Remove">Remove</string>
+    <string name="none">None</string>
+    <string name="otp">OTP</string>
+    <string name="announcement">Announcement</string>
+    <string name="enterDigispace">Enter Digispace</string>
+    <string name="DeactivateTheAccount">"Deactivate the account "</string>
+    <string name="Deactivate">Deactivate</string>
+    <string name="pleaseSelectYourReason">Please select your reason.</string>
+    <string name="app_version">App Version</string>
+    <string name="OneStepTowards">One step towards</string>
+    <!--    <string name="getStarted" >Get Started</string>-->
+    <!--    <string name="ToGetStarted" >To get started</string>-->
+    <!--    <string name="Digispace" >Digispace</string>-->
+    <string name="ForgotPassword"><u>Forgot password?</u></string>
+    <string name="ForgotDigispace"><u>Forgot Digispace?</u></string>
+    <string name="MyBoxx">MyBoxx</string>
+    <!--    <string name="empty" >Empty Here</string>-->
+    <string name="QuickAccess">Quick access</string>
+    <string name="RecycleBin">Recycle Bin</string>
+    <string name="renameFolder">Rename folder</string>
+    <string name="folderColor">Change folder color</string>
+    <!--    <string name="assignUser" >Assign user</string>-->
+    <string name="ContactSupport">Contact Support</string>
+    <string name="ManageProfile">Manage Profile</string>
+    <string name="AutoSync">Auto Sync</string>
+    <string name="Create_Folder_Name">Type folder name here</string>
+    <!--    <string name="apply" >Apply</string>-->
+    <string name="Embed">Embed</string>
+    <string name="EmbedAsset">Embed asset</string>
+    <string name="EmbedAssetDesc">Choose a file/folder from DigiBoxx or from the Device and share it with your connections.</string>
+    <string name="LinkType">Link type</string>
+    <string name="Public">Public</string>
+    <string name="Private">Private</string>
+    <string name="AssetEmbedLink">Asset embed link</string>
+    <string name="overView">Overview</string>
+    <string name="FileTags">File tags</string>
+    <!--    <string name="Assignusers" >Assign users</string>-->
+    <!--    <string name="fileName" >File Name</string>-->
+    <string name="Notification">Notification</string>
+    <!--    <string name="search" >Search</string>-->
+    <string name="send_otp">Send OTP</string>
+    <string name="OtpSend">OTP sent</string>
+    <string name="OtpMessage">OTP has been sent to your registered Mobile Number</string>
+    <!--    <string name="TryAgain" >Try Again</string>-->
+
+    <string name="pleaseEnterEmail">Please enter Email</string>
+    <string name="pleaseEnterDigiSpace">Please enter digispace</string>
+    <string name="pleaseEnterPassword">Please enter password</string>
+    <string name="pleaseEnterMobileNo">Please enter mobile no.</string>
+    <string name="Announcement">Announcement</string>
+
+    <string name="Cancel">Cancel</string>
+    <string name="DoYouWantToAutoSyncDocument">Do you want to AutoSync your documents files?</string>
+    <string name="update">Update</string>
+    <string name="AreYouSure">Are you sure?</string>
+    <string name="deleteFolderMessage">Deleting this file will also delete all the related information with this file</string>
+    <string name="filter">Filter</string>
+    <string name="RestrictTo">Restrict to</string>
+    <string name="Type">Type :</string>
+    <string name="Tags">Tags</string>
+    <string name="assign_permission">You don\'t have an access to assign user.</string>
+    <string name="ActivityLogs">Activity logs</string>
+    <string name="Comments">Comments</string>
+    <string name="EditFileDetails">Edit file details</string>
+    <string name="home">Home</string>
+    <string name="add">Add</string>
+    <string name="premium">Premium</string>
+    <string name="coming_soon">Coming Soon</string>
+    <string name="kabab_menu">kabab menu</string>
+    <string name="star">Star</string>
+    <string name="select_folder_colour">Select Folder Colour</string>
+    <string name="filter_your_search">Filter your search</string>
+    <string name="filter_description">Use the below options to refine your search</string>
+    <string name="date">Date</string>
+    <string name="storage_size">Storage Size</string>
+    <string name="a_to_z">A to Z</string>
+    <string name="z_to_a">Z to A</string>
+    <string name="today">Today</string>
+    <string name="last_7_days">Last 7 Days</string>
+    <string name="last_30_days">Last 30 Days</string>
+    <string name="all_days">All Days</string>
+    <string name="_0mb_to_100mb">0MB To 100MB</string>
+    <string name="_101mb_to_1gb">101MB To 1GB</string>
+    <string name="_1gb_to_20gb">1GB To 20GB</string>
+    <string name="all_sizes">All Sizes</string>
+    <string name="upload_status_success">Upload Successful</string>
+    <string name="you_want_to_remove_profile_photo">You want to remove profile photo?</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="individual">Individuals</string>
+    <string name="download">Download</string>
+    <string name="account_locked_msg">Your account has been locked. Kindly check your email for further instruction.</string>
+    <string name="active_session">You have another active session and hence would need to re-login</string>
+    <string name="login_again">Login Again</string>
+    <string name="unable_to_assign_assets">Above digispace names does not match with our records. We are unable to assign assets to these users.</string>
+    <string name="test_description">Test description</string>
+    <string name="rotate">Rotate</string>
+    <string name="select">Select</string>
+    <string name="new_file">New File</string>
+    <string name="zip">.zip</string>
+    <string name="psd">.psd</string>
+    <string name="jpg">.jpg</string>
+    <string name="png">.png</string>
+    <string name="mp3">.mp3</string>
+    <string name="mp4">.mp4</string>
+    <string name="avi">.avi</string>
+    <string name="wav">.wav</string>
+    <string name="new_folder">New Folder</string>
+    <string name="secure">Secure</string>
+    <string name="edit_security">Edit Security</string>
+    <string name="profile_photo">Profile photo</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+    <string name="you_want_to_logout">You want to logout</string>
+    <string name="my_folder_name">My folder name</string>
+    <string name="protect_with_password">Protect with password</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="save">Save</string>
+    <string name="viewer">Viewer</string>
+    <string name="commenter">Commenter</string>
+    <string name="editor" translatable="false">Editor</string>
+    <string name="notify_people">Notify people</string>
+    <string name="owner">Owner</string>
+    <string name="email_addresses_multiple_digispace_account">Some email addresses has multiple digispace accounts. Please mention the single digispace account here. Or delete those email id\'s</string>
+    <string name="assign">Assign</string>
+    <string name="enter_file_name">Enter file name</string>
+    <string name="file_access">File Access</string>
+    <string name="make_file_downloadable">Make file downloadable</string>
+    <string name="upload_progress">Upload Progress</string>
+    <string name="skip"><u>Skip</u></string>
+    <string name="next">Next</string>
+    <string name="enter_file_description">Enter file description</string>
+    <string name="file_resolution">File resolution</string>
+    <string name="file_date">File date</string>
+    <string name="file_downloadable">File downloadable</string>
+    <string name="enter_tags">Enter Tags</string>
+    <string name="add_tag">Add Tag</string>
+    <string name="images">Image</string>
+    <string name="videos">Video</string>
+    <string name="select_preferred_language">Select your preferred language.</string>
+    <string name="sharing_faster">Sharing Faster</string>
+    <string name="securing_smoother">Securing Smoother</string>
+    <string name="sharing_faster_description">DigiBoxx lets you share your photos, files and folders on an Indian cloud, and it\'s quick, secure and easy on the pocket.</string>
+    <string name="organizing_better_description">DigiBoxx lets you track your digital assets with robust analytics and helps you manage your assets.</string>
+    <string name="securing_smoother_description">DigiBoxx allows you to further secure your precious memories by employing a password-enabled \'Secure Folder\'.</string>
+    <string name="new_update_available">New update available</string>
+    <string name="update_your_app_description">Update your app to experience latest changes in the app.</string>
+    <string name="whats_new">Whats new</string>
+    <string name="more">More...</string>
+    <string name="remind_me_later">Remind me later</string>
+    <string name="update_now">Update now</string>
+    <string name="nobody_has_viewed_the_file_yet">Nobody viewed</string>
+    <string name="nobody_has_downloaded_the_file_yet">Nobody downloaded</string>
+    <string name="free">Free</string>
+    <string name="title">Title</string>
+    <string name="language_settings">Language Settings</string>
+    <string name="selected_language">Selected Language</string>
+    <string name="language">Language</string>
+
+    <string name="fullscreen">FullScreen</string>
+    <string name="file_move_recycle_bin"> File Moved to Recycle Bin </string>
+    <string name="downloading_bs_title">Downloading %s item(s)...</string>
+    <string name="download_limit_upgrade_desc">You have exceeded you download limit. Please remove some files or upgrade</string>
+    <string name="download_limit_upgrade_title">Do you wish to upgrade?</string>
+    <string name="contains_secure_folder_title">Do you wish to continue?</string>
+    <string name="contains_secure_folder_desc">There exists secure folder which will not be downloaded.</string>
+    <string name="colorUpdatedToast">Folder color updated</string>
+    <string name="changeColor">Change color</string>
+    <string name="allSelected">All Selected</string>
+    <string name="current_password">Current Password</string>
+    <string name="enter_new_password">Enter New Password</string>
+    <string name="nobody_has_commented_as_yet">Nobody commented</string>
+    <string name="items">items</string>
+    <string name="enter_otp">Enter OTP </string>
+    <string name="enter_otp_time">Enter OTP in : </string>
+    <string name="password_info_1">Password length should not be less than 8 characters</string>
+    <string name="password_info_2">Password should contain at least one uppercase letter</string>
+    <string name="password_info_3">Password should contain at least one number</string>
+    <string name="password_info_4"><![CDATA[Password should contain at least one special characters !, @, #, $, %, ^, &, *]]></string>
+    <string name="secure_folder_info">Secure folder feature is not available. Please upgrade your account.</string>
+    <string name="address">Address</string>
+    <string name="remove_password">Remove Password</string>
+    <string name="success">Success!</string>
+    <string name="success_message">The folder has now been password protected</string>
+    <string name="wrong_otp_message">Wrong OTP. Please re-enter</string>
+    <string name="download_message">Preparing for download for zip file and you will be notified once done</string>
+    <string name="error_occurred">Error occurred!</string>
+    <string name="someone_viewed_this_file">%s viewed this file</string>
+    <string name="someone_downloaded_this_file">%s downloaded this file</string>
+    <string name="someone_commented_this_file">%s commented on this file</string>
+    <string name="please_add_some_text">Please add some text</string>
+    <string name="no_preview_available">No preview available for %s type file</string>
+    <string name="no_answer_selected">No answer has been selected</string>
+    <string name="bug_fixes">1. Bug fixes</string>
+    <string name="file_is_not_downloadable">File is not downloadable</string>
+    <string name="ready_to_download">Ready to download %d item(s)...</string>
+    <string name="others">Others</string>
+    <string name="documents">Documents</string>
+    <string name="audio">Audio</string>
+    <string name="max_file_size">Max file upload size is : 2Gb</string>
+    <string name="please_enter_folder_name">Please Enter folder name</string>
+    <string name="failed_to_updated_message">Failed to update profile</string>
+    <string name="token_expired_message">Token Expired</string>
+    <string name="server_error_message">Server Error could not get data</string>
+    <string name="file_updated_message">File updated successfully</string>
+    <string name="enter_file_details">Enter File Details</string>
+    <string name="old_new_password_validate_message"><![CDATA[Old & New Password can\'t be the same]]></string>
+    <string name="new_password_validate_message">The New password do not match to confirm password</string>
+
+    <string name="password_less_than_8_validation_msg">Password should have atleast 8 characters</string>
+    <string name="password_lower_case_validation_msg">Password should have atleast 1 lower case character</string>
+    <string name="password_upper_case_validation_msg">Password should have atleast 1 upper case character</string>
+    <string name="password_special_char_validation_msg">Password should have atleast 1 special character ! @ # $ % ^ *</string>
+    <string name="password_number_validation_msg">Password should have atleast 1 number</string>
+
+    <string name="enter_correct_password">Enter correct password</string>
+    <string name="something_went_wrong">Something went wrong</string>
+
+    <string name="recyclebin_substring">Items are deleted permanently after 30 days</string>
+    <string name="recyclebin_empty_message">Recycle bin is empty</string>
+
+    <string name="non_downloadable_file_include_error">There could be file(s) that are non-downloadable, which would not get downloadable.</string>
+
+    <string name="move_to_other_folder">Move to other folder</string>
+    <string name="move">Move</string>
+    <string name="move_to_resources">Move To Resources</string>
+    <string name="move_to_resources_title_dialog">Are you sure you want to move this asset to resource?</string>
+    <string name="move_to_myboxx_title_dialog">Are you sure you want to move this asset to \'%s\'?</string>
+    <string name="publish_to_resources_title_dialog">Are you sure you want to publish this asset to resource?</string>
+    <string name="restore_resources">All your folder contains will be restored. Are you sure ?</string>
+    <string name="billing_details">Billing details</string>
+    <string name="amount_paid">Amount paid :</string>
+    <string name="plan_expiry">Plan expiry</string>
+    <string name="plan_expiry_subtitle">Your plan will expire on</string>
+    <string name="subscription_details">Subscription details</string>
+    <string name="empty_folder">This is an empty folder</string>
+    <!--    <string name="footer_message_free">You can\'t upgrade to premium on the app. Please visit a website.</string>-->
+    <string name="email_message_sent">An email to recover your digispace has been sent to your registered email id</string>
+    <string name="publish_as_resources">Publish as resources</string>
+    <string name="move_to_myboxx">Move to MyBoxx</string>
+    <string name="email_pending_message">An email to recover your digispace has been sent to your registered email id.</string>
+    <string name="undo"><u>Undo</u></string>
+
+    <string name="restore_single_snackbar_message">1 item has been restored</string>
+    <string name="restore_multiple_snackbar_message">items have been restored</string>
+    <string name="no_internet">No internet connection</string>
+    <string name="details">Details</string>
+    <string name="invalid_otp">Invalid OTP</string>
+    <string name="premium_description2">Currently you are on the</string>
+    <string name="plan">\u0020plan</string>
+    <string name="premium_description4">20 GB free plan</string>
+    <string name="premium_description41">You are currently enjoying the highest levels of services from Digiboxx.</string>
+    <string name="individual_plan">Individual</string>
+    <string name="growing_business_plan">Growing Business</string>
+    <string name="enterprise_plan">Enterprise</string>
+    <string name="free_plan_desc_1">Upgrade now and choose from \nthe below mentioned plans</string>
+    <string name="premium_description11">Currently you are using\u0020</string>
+    <string name="enterprise_description11">Feel free to\u0020</string>
+    <string name="enterprise_description12">connect with us\u0020</string>
+    <string name="enterprise_description13">for queries.</string>
+    <string name="premium_description12">You are a very\u0020</string>
+    <string name="premium_description13">valuable customer\u0020</string>
+    <string name="premium_description14">to us.</string>
+    <string name="premium_footer">Upgrade your plan by visiting our website.</string>
+    <string name="enterprise_footer1">This plan has been\u0020</string>
+    <string name="enterprise_footer2">customized</string>
+    <string name="enterprise_footer3">to suit your needs.</string>
+    <string name="premium_monthly_plan">\u20b9 %1$s/mo for %2$s</string>
+    <string name="premium_yearly_plan">\u20b9 %1$s/yr for %2$s</string>
+    <string name="set_your_password">Set your password</string>
+    <string name="reset_password_description">Your new password must be a different from previous used password.</string>
+    <string name="set_password">Set password</string>
+    <string name="min_character">Minimum of 8 characters!</string>
+    <string name="number">At least 1 number!</string>
+    <string name="capital_letter">At least 1 CAPITAL letter!</string>
+    <string name="small_letter">At least 1 small letter!</string>
+    <string name="special_character">At least 1 special character!</string>
+    <string name="logout_of_all_devices"><li>Logout of all devices.</li></string>
+    <string name="active_uploads"><li>Active uploads from other devices will be cancelled</li></string>
+    <string name="congratulations">Congratulations!</string>
+    <string name="successfully_set_password">You have successfully reset your new password.</string>
+    <string name="login">Log in</string>
+
+    <string name="delete_assigned_user">Do you want to delete this user?</string>
+    <string name="bullet_point">\u2022 </string>
+    <string name="viewers_description"><b>Viewers</b> can only see the files.</string>
+    <string name="commenters_description"><b>Commenters</b> can see the files and also comment</string>
+    <string name="copy">Copy</string>
+    <string name="shareable_link_copies_successfully_msg">Link copied successfully.</string>
+    <string name="public_link">Public Link</string>
+    <string name="link_setting">Link settings</string>
+
+    // public link
+    <string name="public_link_title">Total %s item is included</string>
+    <string name="public_link_description">Public share links have been disabled. Only you and the users you\'ve shared this item with will be able to view it. </string>
+    <string name="public_link_description_for_enabled">Public share link is on.\nThis item can be accessed by anyone with the public link</string>
+    <string name="public_link_description2">Click the button below to enable public link access.</string>
+    <string name="link">Link</string>
+    <string name="disable_link">Disable link</string>
+
+    // link settings
+    <string name="enable_public_link_description">Enable public link to access link settings</string>
+    <string name="public_link_upgrade">Upgrade to DigiBoxx Premium to enable all link settings.</string>
+    <string name="set_expiration_date">Set an expiration date</string>
+    <string name="upgrade_plan_expiration_date">Upgrade your plan to set expiration date.</string>
+    <string name="upgrade_plan_set_pass">Upgrade your plan to set password.</string>
+    <string name="unshare_link">Unshare link</string>
+    <string name="expiration_date_hint">DD/MM/YYYY</string>
+    <string name="share_link_password_hint">Type password here</string>
+    <string name="off">Off</string>
+    <string name="set_the_password">Set the password</string>
+    <string name="create_a_link">Create a link</string>
+
+    <string name="link_pass_validation_i">Minimum of 8 characters!</string>
+    <string name="link_pass_validation_ii">At least 1 number!</string>
+    <string name="link_pass_validation_iii">At least 1 small letter!</string>
+    <string name="link_pass_validation_iv">Maximum of 14 characters!</string>
+    <string name="link_pass_validation_v">At least 1 CAPITAL letter!</string>
+    <string name="link_pass_validation_vi">At least 1 Special Character!</string>
+    <string name="enable">Enable</string>
+    <string name="share_via_other_apps">Share via other apps</string>
+    <string name="share">Share</string>
+    <string name="copy_link">Copy link</string>
+    <string name="saving">Saving</string>
+
+    <string name="modify_link_msg">You can edit the setting of expiry date &amp; password by clicking on modify button.</string>
+    <string name="modify_link_header_title">Modify Settings</string>
+    <string name="modify">Modify</string>
+    <string name="get_a_shareable_link">Get a shareable link</string>
+    <string name="move_to">Move to</string>
+    <string name="preview">Preview</string>
+    <string name="life_time_plan">Life Time Plan</string>
+
+    <string name="strike_through_plan1"><strike>\u20b9 %s</strike></string>
+    <string name="strike_through_plan3_yr_mo">/%s for %s</string>
+    <string name="strike_through_plan2_bold">\u20b9 %s/yr for %s</string>
+
+    <string name="common_strike_through_plan">\u20b9 %s/%s for %s</string>
+    <string name="common_strike_plan_mo_to_yr" translatable="false">\u20b9 %s/yr \u20b9 %s/yr for %s</string>
+
+    <string name="save_ten_per"><u>Save 10%</u></string>
+    <string name="add_btn_to_upload_files">Use \'+Add\' button to upload files</string>
+    <string name="shared">Shared</string>
+    <string name="contact_sales">Contact Sales</string>
+    <string name="info_reach_top_plan">As an %s, you are on our top plan. Please contact customer support to upgrade.</string>
+    <string name="maintenance_heading">Oops…you’re early.</string>
+    <string name="maintenance_title_1">Early for the next upgrade that is! But good things do take time.</string>
+    <string name="maintenance_title_2">Our team is working relentlessly behind-the-scenes.</string>
+    <string name="maintenance_title_3">We’ll be back soon!</string>
+    <string name="maintenance_title_4">Stay Connected</string>
+    <string name="you_re_offline">You’re Offline</string>
+
+    <string name="deactivate_dialog_message">Think twice! Convinced that you want to deactivate your account?</string>
+
+    <string name="deactivate_account_msg_title">Your account has been deactivated!</string>
+    <string name="deactivate_account_email_sent_msg_dynamic">An email confirmation has been sent to </string>
+    <string name="deactivate_account_sub_description_msg">There\'s no going back after this! You will not be able to log in to your DigiBoxx Account and all your precious data will be deleted in 48 hours. In case you change your mind, you can reactivate your account with the <b> Account Re-activation Link </b> sent to your registered email address.</string>
+    <string name="file_shared_successfully">Asset(s) has been shared successfully</string>
+
+    <!--    Empty Screen Description-->
+    <string name="starred_empty_title">No starred files</string>
+    <string name="starred_empty_description">To access your data quickly and easily, add stars to your important files.</string>
+
+    <string name="shared_empty_title">So far nothing has been shared with you</string>
+    <string name="shared_empty_description">Find all files or folders shared with you here.</string>
+
+    <string name="quick_access_empty_title">You have not accessed any files lately</string>
+    <string name="quick_access_empty_description">Get a quick view of files accessed recently in the last 7 days.</string>
+
+    <string name="myboxx_empty_title">No files in your MyBoxx yet</string>
+
+    <string name="resources_empty_title">No resources uploaded</string>
+    <string name="resources_empty_admin_description">Allows only admin to upload and share files with everyone directly.\nUse \'+Add\' button to upload files</string>
+    <string name="resources_empty_user_description">Allows users to upload and share files with everyone after permission is granted by Admin.</string>
+
+
+    <string name="resource">Resource</string>
+
+    // resource requests approval
+    <string name="request_detail_title">Request details</string>
+    <string name="user_asset_info_dynamic">from %1$s on\n%2$s | %3$s</string>
+    <string name="resource_approved_title">Request approved</string>
+    <string name="resource_rejected_title">Request rejected</string>
+    <string name="requested_by">Requested by</string>
+    <string name="accept">Accept</string>
+    <string name="reject">Reject</string>
+
+
+    <string name="self_assigned_message">Hey, we thought you already have file with you &#x1F609; </string>
+    <string name="share_link_expire_date_info">Set an expiration date by clicking on the calendar icon. Expiration dates can be extended until your plan expires.</string>
+    <string name="share_link_password_info">You can protect your data by setting the password.</string>
+    <string name="please_enter_valid_email_address">Please enter valid email address</string>
+    <string name="multiple_digispace_alert_message">Please enter the digispace names for below users OR delete in case if you don\'t want to assign</string>
+    <string name="cannot_assign_deactivate_alert_message">The account has been deactivated. We cannot share with a deactivated user.</string>
+    <string name="cannot_share_secure_folder_alert_message">You cannot share Encrypted folder to users</string>
+    <string name="cannot_share_nested_secure_alert_message">You cannot share Encrypted nested folder to users</string>
+    <string name="cannot_assign_pswd_protcd_fldr">You cannot assign password-protected folder(s)</string>
+
+    <!--TODO last entries-->
+    <string name="an_error_occurred" translatable="false">An error occurred</string>
+    <string name="an_error_occurred_try_again" translatable="false">An error occurred please try again</string>
+    <string name="user_removed_successfully" translatable="false">User removed successfully</string>
+    <string name="unsuccessful" translatable="false">Unsuccessful</string>
+    <string name="cant_change_viewer_type" translatable="false">Can\'t change viewer type of this asset</string>
+    <string name="changed_viewer_type_successfully" translatable="false">Access changed successfully.</string>
+    <string name="free_user" translatable="false">Free user</string>
+    <string name="smb" translatable="false">SMB</string>
+
+    <string name="request_accepted" translatable="false">Request accepted</string>
+    <string name="request_rejected" translatable="false">Request rejected</string>
+    <string name="pending_account_activation_message" translatable="false">Pending Account Activation, please activate and login</string>
+    <string name="oops" translatable="false">Oops!!!</string>
+    <string name="no_internet_desc" translatable="false">Please check your internet connection or connect to the wifi network.</string>
+    <string name="upgrade_to_premium" translatable="false">Upgrade now to become a premium user with a <u>10% savings</u> on our annual packages</string>
+    <string name="monthly_to_annual_description" translatable="false">Upgrade to annual plans &amp; <u>save 10%</u> on subscriptions</string>
+    <string name="annual_expire_description" translatable="false">Renew now &amp; <u>save 10%</u> on annual subscription</string>
+    <string name="uploaded_data" translatable="false">Uploaded : %s</string>
+    <string name="assigned_data" translatable="false">Assigned : %s</string>
+
+    <string name="notification_channel_name" translatable="false">Music Channel</string>
+    <string name="notification_channel_description" translatable="false">Shows the currently playing music</string>
+
+    <string name="shareable_link_description" translatable="false">Anyone with the link can view this folder</string>
+    <string name="or" translatable="false">OR</string>
+    <string name="add_your_comments" translatable="false">Add your comments here..</string>
+    <string name="who_has_access" translatable="false">Who has access</string>
+    <string name="number_of_folders" translatable="false">Number of folders :</string>
+    <string name="number_of_files" translatable="false">Number of files :</string>
+    <string name="path" translatable="false">Path :</string>
+    <string name="created" translatable="false">Created :</string>
+    <string name="you" translatable="false">You</string>
+    <string name="resend_otp" translatable="false">Resend OTP</string>
+    <string name="resend_otp_underline" translatable="false"><u>Resend OTP</u></string>
+    <string name="bulkUser" translatable="false">Bulk user</string>
+    <string name="creation" translatable="false">Creation</string>
+    <string name="deactivatedUsers" translatable="false">De-activated Users</string>
+
+    <string name="enter_dpt_name" translatable="false">Enter department name</string>
+    <string name="delete_department_message" translatable="false">Are you sure you want to delete this department?</string>
+    <string name="delete_user_message" translatable="false">Are you sure, you want to delete user</string>
+    <string name="delete_user_message_permanent" translatable="false">Are you sure, you want to delete user permanently?</string>
+    <string name="delete_user_sub_message" translatable="false">Deleting the user will reclaim the space used by this user and it will reassign the ownership of all resource files owned by this user to admin of this account.</string>
+    <string name="expired" translatable="false">Expired</string>
+    <string name="pending_activation" translatable="false">Pending activation</string>
+    <string name="enter_full_name" translatable="false">Enter full name</string>
+    <string name="enter_designation" translatable="false">Enter designation</string>
+    <string name="email_id" translatable="false">Email ID</string>
+    <string name="enter_email_id" translatable="false">Enter Email ID</string>
+    <string name="enter_mobile_no" translatable="false">Enter your mobile number</string>
+    <string name="memory_space" translatable="false">Memory space</string>
+    <string name="choose_date" translatable="false">Choose a date</string>
+    <string name="activation_message" translatable="false">User will get email with account details and the activation link</string>
+    <string name="important_field_message" translatable="false">
+        This is an important field but not mandatory. You may leave this field blank to keep the user account live till the subscription lasts</string>
+    <string name="activation_email_message" translatable="false">Activation Email Sent Successfully</string>
+    <string name="search_for_users" translatable="false">Search for users</string>
+    <string name="search_for_departments" translatable="false">Search for departments</string>
+    <string name="please_select_a_role" translatable="false">Please select a role</string>
+    <string name="please_enter_full_name" translatable="false">Please enter full name</string>
+    <string name="no_records" translatable="false">No Records</string>
+    <string name="please_select_department" translatable="false">Please select department</string>
+    <string name="please_enter_designation" translatable="false">Please enter designation</string>
+    <string name="please_enter_valid_email_id" translatable="false">Please enter valid email ID</string>
+    <string name="please_enter_valid_mobile_number" translatable="false">Please enter valid mobile number</string>
+    <string name="please_allocate_memory_space" translatable="false">Please allocate memory space</string>
+    <string name="select_unit" translatable="false">Select unit</string>
+    <string name="reactivation_success_message" translatable="false">The user has been re-activated successfully</string>
+    <string name="reactivation_delete_message" translatable="false">The user has been deleted successfully</string>
+    <string name="reactivation_dialog_message" translatable="false">Are you sure, you want to activate user again?</string>
+    <string name="upload_description" translatable="false">Update your data right in the excel sheet and Re-upload here.</string>
+    <string name="bulk_user_message" translatable="false">To create the bulk users, please download the given excel sheet.</string>
+    <string name="please_enter_address" translatable="false">Please enter address</string>
+
+    <string name="theme_continue" translatable="false"><u>Continue</u></string>
+    <string name="otp_sent_on_mobile_email_message" translatable="false">OTP has been sent to your registered Email/Mobile number</string>
+    <string name="edit" translatable="false">Edit</string>
+    <string name="comment_delete_message" translatable="false">You want to delete the comment?\n This cannot be undone.</string>
+    <string name="forgot_your_password" translatable="false">Forgot your password?</string>
+    <string name="forgot_your_digispace" translatable="false">Forgot your digispace?</string>
+    <string name="back" translatable="false"><u>Back</u></string>
+    <string name="one_time_password" translatable="false">One time password *</string>
+    <string name="Albums" translatable="false">Albums</string>
+    <string name="view_all" translatable="false"><u>View all</u></string>
+    <string name="Digifotos" translatable="false">DigiFotos</string>
+    <string name="create_album_name_hint" translatable="false">Type album name here</string>
+    <string name="add_new_album" translatable="false">Add new album</string>
+
+    <string name="cloud_sync_pref_text" translatable="false">Digi sync is %1$s</string>
+    <string name="two_factor_description" translatable="false">Once enabled, you will be prompted for OTP during login.</string>
+    <string name="deactivate_description" translatable="false">Once you deactivate the account,you will loose all your assets.</string>
+    <string name="emailAddressNotEdit" translatable="false">Email address</string>
+
+    <string name="digifotos_photo_browser_counter" translatable="false">%1$d 0f %2$d assets</string>
+    <string name="otp_timer_text" translatable="false">You can resend OTP in <b>00:%s</b></string>
+    <string name="sync_folder_description" translatable="false">Your camera folder is automatically synced. Choose other folders to sync up to your DigiFotos.</string>
+    <string name="AutoSyncFolders" translatable="false">Auto sync folders</string>
+    <string name="dataUsage" translatable="false">Data usage</string>
+    <string name="digiSync" translatable="false">Digi Sync</string>
+    <string name="syncFolders" translatable="false">Sync Folders</string>
+    <string name="digiSettingWifiDataDesc" translatable="false">Use mobile data when there’s no Wi-Fi</string>
+    <string name="digiSettingDataOnlyDesc" translatable="false">Sync up assets only over data</string>
+    <string name="digi_fotos_media_count" translatable="false">%1$d Photos, %2$d Videos</string>
+    <string name="firstTimeUser" translatable="false">First time user?</string>
+    <string name="sign_up" translatable="false"><u>Sign up</u></string>
+    <string name="session_timeout" translatable="false">Session Timeout</string>
+    <string name="multi_digispace_error_msg" translatable="false">We found more than one account with this same email id, please enter digispace name.</string>
+    <string name="invalid_digispace_msg_error" translatable="false">Invalid digispace, please pass correct digispace and try again</string>
+    <string name="forgot_digispace_success" translatable="false">An email to recover your digispace has been sent to your registered email id.</string>
+    <string name="digispace_exist_fail_msg" translatable="false"> Sorry! This name is already taken.</string>
+    <string name="digispace_exist_success_msg" translatable="false">Great! Your choice of name is available.</string>
+    <string name="digispace_validation_msg" translatable="false">Digispace should contain more than 4 characters.</string>
+    <string name="otp_success_msg" translatable="false">OTP send successfully</string>
+    <string name="subscription_expired_msg" translatable="false">Your Digiboxx subscription seems to have expired.</string>
+    <!--    TODO new entries-->
+    <string name="invalid_data" translatable="false">Invalid data</string>
+    <!--changes-->
+    <string name="forgot_password_success" translatable="false">A URL link to change password has been sent to your registered email address, please check and change your password from there. The link is valid only for 30 mins.</string>
+    <string name="forgot_password_description" translatable="false">Enter your details and we will send you a new one.</string>
+    <string name="forgot_digispace_description" translatable="false">Enter your details and we will send you your digispace name.</string>
+    <string-array name="premium_plan_type">
+        <item>Plan A</item>
+        <item>Plan B</item>
+        <item>Plan C</item>
+        <item>Plan D</item>
+        <item>Plan E</item>
+        <item>Plan F</item>
+    </string-array>
+
+    <string name="menu_item_save_as" translatable="false">Set as</string>
+    <string name="menu_item_add_to" translatable="false">Add to</string>
+    <string name="menu_item_move_to" translatable="false">Move to</string>
+    <string name="add_to_album" translatable="false">Add to album</string>
+
+    <string name="album_browser_title" translatable="false">All Assets</string>
+    <string name="album_browser_counter_title" translatable="false">%s Assets</string>
+    <string name="album_browser_sub_title" translatable="false">%1$s Photos, %2$s Videos</string>
+    <string name="album_counter_title" translatable="false">%s Albums</string>
+
+    <string name="sync_over_wifi_string" translatable="false">Sync up assets over Wi-Fi</string>
+    <string name="sync_over_mobile_data" translatable="false">Sync up assets over mobile data</string>
+    <string name="sync_videos_over_wifi" translatable="false">Sync videos only over Wi-Fi</string>
+    <string name="sync_settings" translatable="false">Sync Settings</string>
+    <string name="capture_date" translatable="false">Capture date</string>
+    <string name="location" translatable="false">Location</string>
+    <string name="filter_smaller_than_50_kb" translatable="false">Filter images smaller than 50 kb</string>
+    <string name="auto_arrange_app_title" translatable="false">Auto-arrange app collection</string>
+    <string name="auto_arrange_app_desc" translatable="false"><![CDATA[Rearrange third party App Collections chronologically every time edits & modifications are made.]]></string>
+    <string name="digi_sync_desc" translatable="false">Upload all your assets from this device to your DigiFotos Account.</string>
+    <string name="photo_sort_by" translatable="false">Photo sort by</string>
+
+    <string name="delete_asset_dialog_message" translatable="false">Do you really want to delete this asset?</string>
+    <string name="digi_fotos_selection_counter" translatable="false">%s Items</string>
+
+    <string name="rename_album" translatable="false">Rename album</string>
+    <string name="delete_album" translatable="false">Delete album</string>
+    <string name="remove_asset" translatable="false">Remove asset</string>
+    <string name="remove_asset_with_question_mark" translatable="false">Remove asset?</string>
+    <string name="remove_assets_title" translatable="false">Remove %d asset(s)?</string>
+    <string name="delete_assets_title" translatable="false">Delete %d asset(s)?</string>
+    <string name="item_selected" translatable="false">%d %s selected</string>
+    <string name="delete_asset_msg" translatable="false">Asset(s) will be deleted from DigiFotos and move to Recycle bin.</string>
+    <string name="remove_asset_msg" translatable="false">Removal of asset(s) is permanent. Your photos and videos will still remain in DigiFotos.</string>
+    <string name="delete_album_asset_msg" translatable="false">Deleting an album is permanent. Your photos and videos will still remain in DigiFotos.</string>
+    <string name="ul_cancel" translatable="false"><u>Cancel</u></string>
+    <string name="album_title" translatable="false">Album title</string>
+    <string name="add_assets" translatable="false">Add Assets</string>
+    <string name="all_other_files" translatable="false">All other files</string>
+    <string name="storaged_used" translatable="false"><u>Used %s of %s</u></string>
+    <string name="buy_more_storage" translatable="false">Buy more Storage</string>
+    <string name="delete_memories" translatable="false">Delete Memories</string>
+    <string name="quota_limit_message" translatable="false">Your memories have filled your dedicated DigiFotos Space.</string>
+    <string name="storage_full" translatable="false">Storage Full!</string>
+    <string name="back_button_content_description" translatable="false">Back Button</string>
+
+
+    <!--<string name="multi_files_added_to_album_msg" translatable="false">%1$d assets added to %2$s</string>
+    <string name="single_file_added_to_ablum_msg" translatable="false">%s asset</string>-->
+
+    <plurals name="assets_added_to_album_msg" translatable="false">
+        <item quantity="one">%1$s added to %2$s</item>
+        <item quantity="other">%s added to albums</item>
+    </plurals>
+
+    <plurals name="asset_plurals" translatable="false">
+        <item quantity="one">Asset</item>
+        <item quantity="other">%d assets</item>
+    </plurals>
+
+    <plurals name="asset_added_to_inside_album_msg" translatable="false">
+        <item quantity="one">Asset added</item>
+        <item quantity="other">%d assets added</item>
+    </plurals>
+
+    <!--    %s will be asset_plurals-->
+    <string name="asset_removed_from_album_msg" translatable="false">%s removed</string>
+    <string name="formatted_storage" translatable="false">DigiFotos: %s - Other files %s</string>
+    <string name="swipe_anim_text" translatable="false"><![CDATA[Swipe Left & Right to switch tabs]]></string>
+    <string name="make_a_copy" translatable="false">Make a copy</string>
+    <string name="make_copy_creating" translatable="false">Creating copy of %s </string>
+    <string name="make_copy_created" translatable="false">Created copy of %s </string>
+    <string name="file" translatable="false">file</string>
+    <string name="folder" translatable="false">folder</string>
+    <string name="folder_with_camel" translatable="false">Folder</string>
+    <string name="print" translatable="false">Print</string>
+    <string name="cleanUpRecycleBinMessage" translatable="false">All %s assets will be deleted permanently from the bin and you’ll be unable to restore them.</string>
+    <string name="cleanUpFolderMessage" translatable="false">You are emptying this folder. All assets in this folder will be moved to recyclebin .</string>
+    <string name="cleanUpRBSuccessMessage" translatable="false">All %s Assets are permanently deleted from the bin.</string>
+    <string name="cleanUpFSuccessMessage" translatable="false">All Assets are moved to bin.</string>
+    <string name="favourite" translatable="false">Favourite</string>
+    <string name="invalidPasswordMessage" translatable="false">Please enter valid password</string>
+    <string name="crop" translatable="false">Crop</string>
+    <string name="album_cover" translatable="false">Album cover</string>
+    <string name="comments_likes" translatable="false">Comments &amp; Likes</string>
+
+    <string name="create_shared_album" translatable="false">Create shared Album</string>
+
+    <!--    shared album browser fragment-->
+    <string name="comment" translatable="false">Comment</string>
+    <string name="album_settings" translatable="false">Album settings</string>
+
+    <string name="add_photos" translatable="false">Add Photos</string>
+
+    <string name="remove_assets_description" translatable="false">Removal of asset is permanent. Your photos and videos will still remain in DigiFotos.</string>
+
+    <string name="upload" translatable="false">Upload</string>
+
+    <string name="create_a_new_folder_in_my_boxx" translatable="false">Create a new folder in My Boxx</string>
+    <string name="add_your_comments_single" translatable="false">Add your comments</string>
+    <string name="invite" translatable="false">Invite</string>
+
+    <string name="remove_user" translatable="false">Remove user</string>
+    <string name="block_user" translatable="false">Block user</string>
+
+    <string name="invited" translatable="false">Invited</string>
+
+    <string name="leave_album" translatable="false">Leave Album</string>
+
+    <!--    waring dialogs-->
+    <string name="remove_user_from_album_title" translatable="false">Remove %s</string>
+    <string name="remove_user_from_album_description" translatable="false">Photos and comments that they have added will be removed.</string>
+
+    <string name="remove_album" translatable="false">Are you sure you want to leave the album?</string>
+    <string name="leave" translatable="false">Leave</string>
+    <string name="delete_comment_description" translatable="false">Are you sure you want to delete the comment?</string>
+    <string name="top_plan_footer_indv_msg" translatable="false">As an individual, you are on our top plan.</string>
+    <string name="top_plan_footer_smb_msg" translatable="false">As a Growing Business, you are on our top plan.</string>
+    <string name="assets_moved_successfully" translatable="false">Asset(s) moved successfully.</string>
+
+    <string name="recent_searches" translatable="false">Recent searches</string>
+    <string name="search_results" translatable="false">Search results</string>
+    <string name="assets_count" translatable="false">(%d Assets)</string>
+
+    <string name="uploadedWithColon" translatable="false">Uploaded :</string>
+    <string name="file_uploaded" translatable="false">File uploaded :</string>
+    <string name="file_created" translatable="false">File created :</string>
+    <string name="manage_versions">Manage versions</string>
+
+    <string name="shared_albums" translatable="false">Shared Albums</string>
+    <string name="invites" translatable="false">Invites</string>
+
+    <string name="file_upload_notification_content_title" translatable="false">Upload in progress</string>
+    <string name="view_file_version"><u>View File version</u></string>
+
+    <string name="directory_loader_worker_notification_msg" translatable="false">Refreshing Directories</string>
+    <string name="todo">TODO</string>
+</resources>

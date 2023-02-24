@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="comment_cursor">#AEAEBA</color>
+    <color name="theme_primary">#8AB4F8</color>
+    <color name="theme_primary_text">#00006e</color>
+    <color name="theme_card_background">#161421</color>
+    <color name="theme_card_icon_background">#423C61</color>
+    <color name="theme_bar_chart_primary_text">#F1F1F1</color>
+    <color name="subscription_title_color">#94A0AE</color>
+    <color name="theme_light_text">#9FA0A6</color>
+    <color name="theme_select_assets">#3F3B5E</color>
+    <color name="inactive_button_gray_color">#3F3A5C</color>
+    <color name="theme_card_new_background">#4E4B66</color>
+    <color name="theme_resource_text">#CDCDCD</color>
+    <color name="item_disabled">#747380</color>
+    <color name="body_text">#e4e1ec</color>
+    <color name="bottom_sheet_background">#4E4B66</color>
+    <color name="theme_card_folder_background">#423C61</color>
+    <color name="bottomSheetMoveTextColor">#797B83</color>
+    <color name="theme_light_background">#636898</color>
+    <color name="theme_dark_background">#7F83AA</color>
+    <color name="description">#a8a8a8</color>
+    <color name="divider3">#e5e5e5</color>
+    <color name="overlay">#80595968</color>
+    <color name="color_thumbnail_mov">#161421</color>
+    <color name="color_thumbnail_docs">#161421</color>
+    <color name="color_thumbnail_ppt">#161421</color>
+    <color name="color_thumbnail_word">#161421</color>
+    <color name="color_thumbnail_music">#161421</color>
+    <color name="color_thumbnail_image">#161421</color>
+    <color name="color_thumbnail_excel">#161421</color>
+    <color name="color_thumbnail_compress">#161421</color>
+    <color name="color_thumbnail_other">#161421</color>
+    <color name="theme_top_appbar">#1D1A29</color>
+    <color name="background_color">#262338</color>
+    <color name="backgroundPageColor">#262338</color>
+    <color name="topAppbarColor">#161421</color>
+    <color name="progress_track_color">#80818F</color>
+    <color name="progress_indicator_color">#006bff</color>
+    <color name="bottomSheetTextColor">#B2B3BF</color>
+    <color name="dark_gray_heading">#9BA0BA</color>
+    <color name="iconTextColor">#D1D2E0</color>
+    <color name="divider2">#66676C</color>
+    <color name="disable_text_color">#9FA0A6</color>
+    <color name="full_transparent">#00000000</color>
+    <color name="card_back_color">#2D2847</color>
+    <color name="color_error">#FFB4AB</color>
+    <color name="color_success">#B9FAA7</color>
+
+
+
+    <color name="white_black">#000000</color>
+    <color name="white_black_blue">#4A4760</color>
+    <color name="light_gray_white">#FFFFFF</color>
+    <color name="white_blue_black">#4e4b66</color>
+    <color name="black_white">#FFFFFF</color>
+    <color name="manage_version_color">#D1D2E0</color>
+    <color name="blue_white">#F6F6F6</color>
+    <color name="search_recent_bg">#26223B</color>
+    <color name="search_recent_divider">#2D2845</color>
+    <color name="icon_tint">#B2B2B6</color>
+
+    <color name="icon_bg">#161421</color>
+    <color name="manageVersionRetryBg">#00F4F4F4</color>
+</resources>

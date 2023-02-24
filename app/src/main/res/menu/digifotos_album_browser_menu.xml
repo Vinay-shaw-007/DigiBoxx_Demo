@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/share"
+        android:title="@string/share"
+        android:icon="@drawable/ic_share_icon_24"
+        android:contentDescription="@string/Share"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/remove"
+        android:title="@string/remove_asset"
+        android:icon="@drawable/ic_remove_asset"
+        android:contentDescription="@string/remove_asset"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/select_all"
+        android:title="@string/selectAll"
+        android:icon="@drawable/ic_digifotos_select_all_icon"
+        android:contentDescription="@string/selectAll"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/add_to_album"
+        android:title="@string/add_to_album"
+        android:contentDescription="@string/add_to_album"
+        app:showAsAction="ifRoom"
+        android:enabled="true"/>
+    <!--<item
+        android:id="@+id/select_all"
+        android:title="@string/selectAll"
+        android:contentDescription="@string/selectAll"
+        app:showAsAction="never"
+        />-->
+</menu>

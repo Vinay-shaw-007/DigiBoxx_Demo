@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/share"
+        android:title="@string/share"
+        android:icon="@drawable/ic_share_icon_24"
+        android:contentDescription="@string/Share"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/addItem"
+        android:title="@string/add"
+        android:icon="@drawable/ic_add"
+        android:contentDescription="@string/add"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/save"
+        android:title="@string/save"
+        android:visible="false"
+        tools:visible="true"
+        android:contentDescription="@string/save"
+        android:icon="@drawable/ic_check_active"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/comment"
+        android:title="@string/comment"
+        android:contentDescription="@string/comment"
+        tools:visible="true"
+        app:showAsAction="never"/>
+
+    <!--<item
+        android:id="@+id/select"
+        android:title="@string/select"
+        android:contentDescription="@string/select"
+        app:showAsAction="never"/>-->
+
+    <item
+        android:id="@+id/edit"
+        android:title="@string/edit"
+        android:contentDescription="@string/edit"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/delete_album"
+        android:title="@string/delete_album"
+        android:contentDescription="@string/delete_album"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/album_settings"
+        android:title="@string/album_settings"
+        android:contentDescription="@string/album_settings"
+        app:showAsAction="never"/>
+
+</menu>

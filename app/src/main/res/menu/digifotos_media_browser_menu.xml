@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/item_copy_to"
+        android:title="@string/add_to_album"/>
+
+    <item
+        android:id="@+id/item_remove_to"
+        android:title="@string/Remove"/>
+
+    <item
+        android:id="@+id/item_move_to"
+        android:title="@string/menu_item_move_to"/>
+
+    <item
+        android:id="@+id/item_set_as"
+        android:title="@string/menu_item_save_as"/>
+
+    <item
+        android:id="@+id/item_download"
+        android:title="@string/download"/>
+
+    <item
+        android:id="@+id/item_details"
+        android:title="@string/details"/>
+    <item
+        android:id="@+id/item_album_cover"
+        android:title="@string/album_cover"/>
+    <item
+        android:id="@+id/item_print"
+        android:title="@string/print"/>
+</menu>

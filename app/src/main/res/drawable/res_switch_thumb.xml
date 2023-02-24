@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_checked="false" android:state_enabled="true">
+        <shape android:shape="oval">
+            <solid android:color="@color/md_theme_light_onPrimary"/>
+            <size android:height="20dp"
+                android:width="20dp"/>
+            <stroke android:color="@color/md_theme_light_surfaceVariant"
+                android:width="2dp"/>
+        </shape>
+    </item>
+
+    <item android:state_checked="true" android:state_enabled="true">
+        <shape android:shape="oval">
+            <solid android:color="@color/md_theme_light_onPrimary"/>
+            <size android:height="20dp"
+                android:width="20dp"/>
+            <stroke android:color="@color/md_theme_light_primary"
+                android:width="2dp"/>
+        </shape>
+    </item>
+
+    <item android:state_checked="false" android:state_enabled="false">
+        <shape android:shape="oval">
+            <solid android:color="@color/md_theme_light_onPrimary"/>
+            <size android:height="20dp"
+                android:width="20dp"/>
+            <stroke android:color="#1FE4E1EC"
+                android:width="2dp"/>
+        </shape>
+    </item>
+
+    <item android:state_checked="true" android:state_enabled="false">
+        <shape android:shape="oval">
+            <solid android:color="@color/md_theme_light_onPrimary"/>
+            <size android:height="20dp"
+                android:width="20dp"/>
+            <stroke android:color="#85006BFF"
+                android:width="2dp"/>
+        </shape>
+    </item>
+</selector>
