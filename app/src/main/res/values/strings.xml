@@ -1,7 +1,7 @@
 <resources>
 
     <string name="Search">Search</string>
-    <string name="app_name">DigiBoxx</string>
+    <string name="app_name">DigiBoxx Demo</string>
     <string name="get_started">Get Started</string>
     <string name="Workspace">Digispace</string>
     <string name="Forgot_password"><u>Forgot password?</u></string>
@@ -805,4 +805,5 @@
 
     <string name="directory_loader_worker_notification_msg" translatable="false">Refreshing Directories</string>
     <string name="todo">TODO</string>
+    <string name="never_miss_any_of_your_pics_videos_certifications_ppts_and_spreadsheets_ever">Never miss any of your pics, videos, certifications, PPTs and spreadsheets ever.</string>
 </resources>

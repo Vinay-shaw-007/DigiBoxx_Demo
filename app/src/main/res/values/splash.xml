@@ -5,6 +5,8 @@
 
         <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher_round</item>
 
-        <item name="postSplashScreenTheme">@style/MyMaterialTheme</item>
+        <item name="windowSplashScreenIconBackgroundColor">@color/white</item>
+
+        <item name="postSplashScreenTheme">@style/Theme.Digiboxx</item>
     </style>
 </resources>
