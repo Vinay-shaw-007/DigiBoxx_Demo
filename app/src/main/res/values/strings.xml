@@ -806,4 +806,8 @@
     <string name="directory_loader_worker_notification_msg" translatable="false">Refreshing Directories</string>
     <string name="todo">TODO</string>
     <string name="never_miss_any_of_your_pics_videos_certifications_ppts_and_spreadsheets_ever">Never miss any of your pics, videos, certifications, PPTs and spreadsheets ever.</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>

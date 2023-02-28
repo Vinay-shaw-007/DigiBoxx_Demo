@@ -1,5 +1,7 @@
 package com.example.digiboxxdemo.retrofit
 
+import com.facebook.stetho.Stetho
+import com.facebook.stetho.okhttp3.StethoInterceptor
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import okhttp3.Request
@@ -22,6 +24,9 @@ class ApiCall @Inject constructor(){
         httpClient.callTimeout(1, TimeUnit.MINUTES)
         httpClient.readTimeout(1, TimeUnit.MINUTES)
         httpClient.writeTimeout(2, TimeUnit.MINUTES)
+
+        httpClient.addNetworkInterceptor(StethoInterceptor())
+
         httpClient.addInterceptor(Interceptor { chain ->
             var request = chain.request()
             var requestBody = request.body
