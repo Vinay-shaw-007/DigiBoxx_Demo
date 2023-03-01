@@ -1,5 +1,9 @@
 package com.example.digiboxxdemo.retrofit
 
+import android.util.Log
+import com.example.digiboxxdemo.BuildConfig
+import com.example.digiboxxdemo.db.UserAuthManager
+import com.example.digiboxxdemo.ui.home.HomeFragment
 import com.facebook.stetho.Stetho
 import com.facebook.stetho.okhttp3.StethoInterceptor
 import okhttp3.Interceptor
@@ -14,9 +18,12 @@ import org.json.JSONObject
 import java.util.concurrent.TimeUnit
 import javax.inject.Inject
 
-class ApiCall @Inject constructor(){
+class ApiCall @Inject constructor() {
     private val interceptor = HttpLoggingInterceptor()
     var httpClient: OkHttpClient.Builder = OkHttpClient.Builder()
+
+    @Inject
+    lateinit var userAuthManager: UserAuthManager
 
     init {
         interceptor.level = HttpLoggingInterceptor.Level.BODY
@@ -30,21 +37,49 @@ class ApiCall @Inject constructor(){
         httpClient.addInterceptor(Interceptor { chain ->
             var request = chain.request()
             var requestBody = request.body
-            if (requestBody?.contentType()?.subtype.equals(
-                    "json",
-                    ignoreCase = true
-                )
-            ) requestBody = processApplicationJsonRequestBody(requestBody)
+            if (userAuthManager.getToken() != null) {
+                if (requestBody?.contentType()?.subtype.equals(
+                        "json",
+                        ignoreCase = true
+                    )
+                ) requestBody = processApplicationJsonRequestBody(requestBody)
+            }
+
             // add header in request
             val requestBuilder: Request.Builder = request.newBuilder()
-
-//            requestBuilder.addHeader("referer", "https://apptest.digiboxx.com")
-
-            requestBuilder.addHeader("referer", "com.liqvd.digibox.dev")
+            requestBuilder.method(request.method, requestBody).header(
+                "authorization",
+                "Bearer ${userAuthManager.getToken()}"
+            )
+//                requestBuilder.addHeader("referer", "https://apptest.digiboxx.com")
+            requestBuilder.addHeader("referer", "com.liqvd.digibox.test")
             request = requestBuilder.build()
             chain.proceed(request)
         })
+
+//        httpClient.addInterceptor(Interceptor { chain ->
+//            var request = chain.request()
+//            var requestBody = request.body
+//            if (requestBody?.contentType()?.subtype.equals(
+//                    "json",
+//                    ignoreCase = true
+//                )
+//            ) requestBody = processApplicationJsonRequestBody(requestBody)
+//            // add header in request
+//            val requestBuilder: Request.Builder = request.newBuilder()
+//
+//            if (userAuthManager.getStatusCode() == 200) {
+//                Log.d(HomeFragment.TAG, "Bearer ${userAuthManager.getToken()}")
+//                requestBuilder.addHeader("authorization", "Bearer ${userAuthManager.getToken()}")
+//            }
+//            requestBuilder.addHeader("referer", "com.liqvd.digibox.dev")
+//
+//            request = requestBuilder.build()
+//            chain.proceed(request)
+////            requestBuilder.addHeader("referer", "https://apptest.digiboxx.com")
+//        })
     }
+
     private fun processApplicationJsonRequestBody(
         requestBody: RequestBody?
     ): RequestBody? {
