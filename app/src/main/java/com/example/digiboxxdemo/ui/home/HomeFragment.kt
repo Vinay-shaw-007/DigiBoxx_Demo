@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
@@ -18,6 +19,10 @@ import com.example.digiboxxdemo.retrofit.MyApi
 import com.example.digiboxxdemo.ui.EqualSpacingItemDecoration
 import com.example.digiboxxdemo.ui.adapter.FilesAdapter
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.collectLatest
+import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @AndroidEntryPoint
@@ -31,6 +36,7 @@ class HomeFragment : Fragment() {
     }
 
     private var _binding: FragmentHomeBinding? = null
+    private val homeViewModel: HomeViewModel by viewModels()
 
 
     // This property is only valid between onCreateView and
@@ -42,29 +48,31 @@ class HomeFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val homeViewModel =
-            ViewModelProvider(this)[HomeViewModel::class.java]
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        viewLifecycleOwner.lifecycleScope.launchWhenCreated {
-            repeatOnLifecycle(Lifecycle.State.STARTED) {
-                val response = myApi.getUserDetailsResponse()
-                if (response.isSuccessful) {
-                    Log.d(TAG, response.body().toString())
-                }
 
-            }
-        }
+        homeViewModel.getUserDetails("file")
+
         val adapter = FilesAdapter()
         val spacingInPixels =
             resources.getDimensionPixelSize(R.dimen.spacing) // Define the spacing dimension in resources
         binding.rvFiles.addItemDecoration(EqualSpacingItemDecoration(spacingInPixels))
         binding.rvFiles.layoutManager = GridLayoutManager(requireContext(), 2)
         binding.rvFiles.adapter = adapter
+
+        viewLifecycleOwner.lifecycleScope.launchWhenStarted {
+            homeViewModel.userDetails.collectLatest {
+                Log.d(TAG, it.toString())
+                it?.let {
+                    adapter.submitList(it.file_data)
+                }
+
+            }
+        }
     }
 
     override fun onDestroyView() {

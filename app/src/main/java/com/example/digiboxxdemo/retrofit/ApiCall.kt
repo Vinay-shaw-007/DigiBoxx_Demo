@@ -36,23 +36,26 @@ class ApiCall @Inject constructor() {
 
         httpClient.addInterceptor(Interceptor { chain ->
             var request = chain.request()
+            val requestBuilder: Request.Builder = request.newBuilder()
             var requestBody = request.body
-            if (userAuthManager.getToken() != null) {
+            if (!userAuthManager.getToken().isNullOrBlank()) {
                 if (requestBody?.contentType()?.subtype.equals(
                         "json",
                         ignoreCase = true
                     )
                 ) requestBody = processApplicationJsonRequestBody(requestBody)
+                requestBuilder.method(request.method, requestBody).header(
+                    "authorization",
+                    "Bearer ${userAuthManager.getToken()}"
+                )
             }
 
             // add header in request
-            val requestBuilder: Request.Builder = request.newBuilder()
-            requestBuilder.method(request.method, requestBody).header(
-                "authorization",
-                "Bearer ${userAuthManager.getToken()}"
-            )
+            Log.d("USER_TOKEN", userAuthManager.getToken().toString())
+
+
 //                requestBuilder.addHeader("referer", "https://apptest.digiboxx.com")
-            requestBuilder.addHeader("referer", "com.liqvd.digibox.test")
+            requestBuilder.addHeader("referer", "com.liqvd.digibox.dev")
             request = requestBuilder.build()
             chain.proceed(request)
         })
