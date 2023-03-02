@@ -112,8 +112,10 @@ class LoginFragment : Fragment() {
             }
 
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                val isEmailValid = validateEmail(binding.edtEmailAddress)
+                if (isEmailValid) binding.tlEditEmailAddress.helperText = ""
                 binding.btnLogin.isEnabled =
-                    validateEmail(binding.edtEmailAddress) && validatePassword(binding.edtPassword)
+                    isEmailValid && validatePassword(binding.edtPassword)
             }
         })
 
@@ -127,8 +129,10 @@ class LoginFragment : Fragment() {
             }
 
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                val isPasswordValid = validatePassword(binding.edtPassword)
+                if (isPasswordValid) binding.tlEditPassword.helperText = ""
                 binding.btnLogin.isEnabled =
-                    validateEmail(binding.edtEmailAddress) && validatePassword(binding.edtPassword)
+                    validateEmail(binding.edtEmailAddress) && isPasswordValid
             }
         })
 
