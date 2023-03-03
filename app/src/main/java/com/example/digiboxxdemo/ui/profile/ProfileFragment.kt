@@ -10,8 +10,10 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
+import com.example.digiboxxdemo.Constant
 import com.example.digiboxxdemo.databinding.FragmentProfileBinding
 import com.example.digiboxxdemo.db.UserAuthManager
+import com.example.digiboxxdemo.ui.home.HomeFragmentDirections
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collectLatest
 import javax.inject.Inject
@@ -54,7 +56,15 @@ class ProfileFragment : Fragment() {
                                 userAuthManager.saveToken("")
                                 findNavController().navigate(ProfileFragmentDirections.actionNavigationProfileToLoginFragment())
                             }
-                            else -> Toast.makeText(requireContext(), it.message, Toast.LENGTH_LONG).show()
+                            else -> {
+                                if (it.message == Constant.TOKEN_EXPIRED) {
+                                    Toast.makeText(requireContext(), it.message, Toast.LENGTH_LONG)
+                                        .show()
+                                    val action =
+                                        ProfileFragmentDirections.actionNavigationProfileToLoginFragment()
+                                    findNavController().navigate(action)
+                                }
+                            }
                         }
                         Log.d(TAG, it.toString())
                     }

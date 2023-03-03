@@ -19,4 +19,5 @@ object Constant {
     const val USER_STORAGE_CONSUMED = "USER_STORAGE_CONSUMED"
     const val USER_CREATOR = "USER_CREATOR"
     const val USER_STATUS_CODE = "USER_STATUS_CODE"
+    const val TOKEN_EXPIRED = "Token Expired"
 }

@@ -11,7 +11,10 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
+import com.example.digiboxxdemo.Constant
+import com.example.digiboxxdemo.Constant.TOKEN_EXPIRED
 import com.example.digiboxxdemo.R
 import com.example.digiboxxdemo.databinding.FragmentHomeBinding
 import com.example.digiboxxdemo.model.Files
@@ -68,6 +71,11 @@ class HomeFragment : Fragment() {
             homeViewModel.userDetails.collectLatest {
                 Log.d(TAG, it.toString())
                 it?.let {
+                    if (it.message == TOKEN_EXPIRED) {
+                        val action = HomeFragmentDirections.actionNavigationHomeToTokenExpiredFragment()
+                        findNavController().navigate(action)
+                        return@collectLatest
+                    }
                     adapter.submitList(it.file_data)
                 }
 
