@@ -7,25 +7,20 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.Lifecycle
-import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
-import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
-import com.example.digiboxxdemo.Constant
+import com.example.digiboxxdemo.Constant.FILE_TYPE
+import com.example.digiboxxdemo.Constant.FOLDER_TYPE
 import com.example.digiboxxdemo.Constant.TOKEN_EXPIRED
 import com.example.digiboxxdemo.R
 import com.example.digiboxxdemo.databinding.FragmentHomeBinding
-import com.example.digiboxxdemo.model.Files
+import com.example.digiboxxdemo.model.FileOrFolder
 import com.example.digiboxxdemo.retrofit.MyApi
 import com.example.digiboxxdemo.ui.EqualSpacingItemDecoration
 import com.example.digiboxxdemo.ui.adapter.FilesAdapter
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.collectLatest
-import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @AndroidEntryPoint
@@ -46,6 +41,8 @@ class HomeFragment : Fragment() {
     // onDestroyView.
     private val binding get() = _binding!!
 
+    private val myfiles = ArrayList<FileOrFolder>()
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -58,7 +55,8 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        homeViewModel.getUserDetails("file")
+        homeViewModel.getUserDetailsForFile(FILE_TYPE)
+        homeViewModel.getUserDetailsForFolder(FOLDER_TYPE)
 
         val adapter = FilesAdapter()
         val spacingInPixels =
@@ -67,20 +65,141 @@ class HomeFragment : Fragment() {
         binding.rvFiles.layoutManager = GridLayoutManager(requireContext(), 2)
         binding.rvFiles.adapter = adapter
 
+        val myFolders = mutableListOf<FileOrFolder>()
+        val myFiles = mutableListOf<FileOrFolder>()
+
         viewLifecycleOwner.lifecycleScope.launchWhenStarted {
-            homeViewModel.userDetails.collectLatest {
-                Log.d(TAG, it.toString())
+            homeViewModel.userDetailsForFolder.collectLatest { it ->
+
                 it?.let {
                     if (it.message == TOKEN_EXPIRED) {
-                        val action = HomeFragmentDirections.actionNavigationHomeToTokenExpiredFragment()
+
+                        val action =
+                            HomeFragmentDirections.actionNavigationHomeToTokenExpiredFragment()
                         findNavController().navigate(action)
-                        return@collectLatest
+
+                    } else {
+
+                        if (it.type == FOLDER_TYPE) {
+
+                            it.folder_data?.let { folderData ->
+                                myFolders.addAll(folderData.map { folder -> FileOrFolder(it.type, folder) })
+                            }
+                            adapter.submitList(myFolders + myFiles)
+                        }
+
                     }
-                    adapter.submitList(it.file_data)
                 }
 
             }
         }
+
+        viewLifecycleOwner.lifecycleScope.launchWhenStarted {
+            homeViewModel.userDetailsForFile.collectLatest {
+                it?.let {
+
+                    if (it.type == FILE_TYPE) {
+
+                        it.file_data?.let { fileData ->
+                            myFiles.addAll(fileData.map { file -> FileOrFolder(it.type, file) })
+                        }
+                        adapter.submitList(myFolders + myFiles)
+                    }
+
+                }
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//        viewLifecycleOwner.lifecycleScope.launchWhenStarted {
+//            homeViewModel.userDetailsForFolder.collectLatest { it ->
+//
+//                it?.let {
+//                    if (it.message == TOKEN_EXPIRED) {
+//
+//                        val action =
+//                            HomeFragmentDirections.actionNavigationHomeToTokenExpiredFragment()
+//                        findNavController().navigate(action)
+//
+//                    } else {
+//
+//                        if (it.type == FOLDER_TYPE) {
+//
+//                            it.folder_data?.let { it1 ->
+//                                it1.map { folderData ->
+//                                    myfiles.add(FileOrFolder(it.type, folderData))
+//                                }
+//                            }
+//
+//
+//                        }
+//
+//                    }
+//                }
+//
+//            }
+//        }
+//
+//        viewLifecycleOwner.lifecycleScope.launchWhenStarted {
+//            homeViewModel.userDetailsForFile.collectLatest {
+//                it?.let {
+//
+//                    if (it.type == FILE_TYPE) {
+//
+//                        it.file_data?.let { it1 ->
+//                            it1.map { fileData ->
+//                                myfiles.add(FileOrFolder(it.type, fileData))
+//                            }
+//                        }
+//                        adapter.submitList(myfiles)
+//                    }
+//
+//                }
+//            }
+//        }
+
+
     }
 
     override fun onDestroyView() {

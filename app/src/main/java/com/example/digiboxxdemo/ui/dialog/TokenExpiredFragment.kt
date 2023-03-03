@@ -11,10 +11,17 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import com.example.digiboxxdemo.R
 import com.example.digiboxxdemo.databinding.FragmentTokenExpiredBinding
-
+import com.example.digiboxxdemo.db.UserAuthManager
+import dagger.hilt.android.AndroidEntryPoint
+import javax.inject.Inject
+@AndroidEntryPoint
 class TokenExpiredFragment : DialogFragment() {
+
+    @Inject
+    lateinit var userAuthManager: UserAuthManager
 
     private val viewModel: TokenExpiredViewModel by viewModels()
 
@@ -36,6 +43,7 @@ class TokenExpiredFragment : DialogFragment() {
 
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
         val dialog = super.onCreateDialog(savedInstanceState)
+        dialog.setCancelable(false)
         dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
         return dialog
     }
@@ -43,5 +51,10 @@ class TokenExpiredFragment : DialogFragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        binding.tvLoginAgain.setOnClickListener {
+            userAuthManager.saveToken("")
+            val action = TokenExpiredFragmentDirections.actionTokenExpiredFragmentToLoginFragment()
+            findNavController().navigate(action)
+        }
     }
 }

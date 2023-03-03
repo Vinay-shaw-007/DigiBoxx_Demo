@@ -20,4 +20,7 @@ object Constant {
     const val USER_CREATOR = "USER_CREATOR"
     const val USER_STATUS_CODE = "USER_STATUS_CODE"
     const val TOKEN_EXPIRED = "Token Expired"
+    const val FILE_TYPE = "file"
+    const val FOLDER_TYPE = "folder"
+    const val DIGIFOTOS = "DigiFotos"
 }

@@ -15,6 +15,9 @@
         app:cardUseCompatPadding="true"
         app:contentPadding="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.5">
 
@@ -22,11 +25,11 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <com.google.android.material.textview.MaterialTextView
+            <TextView
                 android:id="@+id/tvTokenExpired"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/token_expired_message"
+                android:text="@string/active_session"
                 android:textAlignment="center"
                 android:textAppearance="@style/MaterialAlertDialog.Material3.Title.Text"
                 android:textSize="16sp"
@@ -35,16 +38,12 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <com.google.android.material.textview.MaterialTextView
+            <Button
                 android:id="@+id/tvLoginAgain"
+                style="@style/Widget.Material3.Button.TextButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:autoLink="all"
-                android:linksClickable="true"
                 android:text="@string/login_again"
-                android:textAlignment="center"
-                android:textAppearance="@style/MaterialAlertDialog.Material3.Title.Text"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="@+id/tvTokenExpired"
                 app:layout_constraintStart_toStartOf="@+id/tvTokenExpired"

@@ -1,6 +1,5 @@
 package com.example.digiboxxdemo.ui.home
 
-import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.digiboxxdemo.model.Files
@@ -17,15 +16,28 @@ class HomeViewModel @Inject constructor(
     private val repo: DigiRepo
 ) :  ViewModel() {
 
-    private val _userDetails = MutableSharedFlow<Files?>()
-    val userDetails = _userDetails.asSharedFlow()
+    private val _userDetailsForFile = MutableSharedFlow<Files?>()
+    val userDetailsForFile = _userDetailsForFile.asSharedFlow()
 
-    fun getUserDetails(type: String) {
+    private val _userDetailsForFolder = MutableSharedFlow<Files?>()
+    val userDetailsForFolder = _userDetailsForFolder.asSharedFlow()
+
+    fun getUserDetailsForFile(type: String) {
         viewModelScope.launch {
             when (val response = repo.getUserDetails(type)) {
-                is Resource.Success -> _userDetails.emit(response.data)
+                is Resource.Success -> _userDetailsForFile.emit(response.data)
                 else -> {
-                    _userDetails.emit(null)
+                    _userDetailsForFile.emit(null)
+                }
+            }
+        }
+    }
+    fun getUserDetailsForFolder(type: String) {
+        viewModelScope.launch {
+            when (val response = repo.getUserDetails(type)) {
+                is Resource.Success -> _userDetailsForFolder.emit(response.data)
+                else -> {
+                    _userDetailsForFolder.emit(null)
                 }
             }
         }

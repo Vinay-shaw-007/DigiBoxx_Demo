@@ -1,0 +1,30 @@
+package com.example.digiboxxdemo.model
+
+data class FolderData(
+    val Size_of_folder: Int,
+    val assigned_user_details: List<Any>,
+    val copy_link: Int,
+    val created_by: Int,
+    val created_by_fname: String,
+    val created_by_image_path: Any,
+    val created_by_lname: String,
+    val created_date: String,
+    val created_time: String,
+    val expiry_days: String,
+    val folder_color: Any,
+    val folder_count: Int,
+    val folder_created_time: String,
+    val folder_id: Int,
+    val folder_lock: Int,
+    val folder_name: String,
+    val folder_url: String,
+    val isReadOnly: Int,
+    val is_managed: String,
+    val is_recycle_bin: Int,
+    val is_resource: Int,
+    val is_secured: Int,
+    val organization_id: String,
+    val parent_folder_id: Int,
+    val star_file: String,
+    val type_size: Int
+)

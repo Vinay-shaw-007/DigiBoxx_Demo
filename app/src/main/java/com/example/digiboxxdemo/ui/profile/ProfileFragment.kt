@@ -60,8 +60,7 @@ class ProfileFragment : Fragment() {
                                 if (it.message == Constant.TOKEN_EXPIRED) {
                                     Toast.makeText(requireContext(), it.message, Toast.LENGTH_LONG)
                                         .show()
-                                    val action =
-                                        ProfileFragmentDirections.actionNavigationProfileToLoginFragment()
+                                    val action = ProfileFragmentDirections.actionNavigationProfileToTokenExpiredFragment()
                                     findNavController().navigate(action)
                                 }
                             }

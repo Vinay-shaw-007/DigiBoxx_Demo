@@ -52,5 +52,12 @@
         android:id="@+id/tokenExpiredFragment"
         android:name="com.example.digiboxxdemo.ui.dialog.TokenExpiredFragment"
         android:label="fragment_token_expired"
-        tools:layout="@layout/fragment_token_expired" />
+        tools:layout="@layout/fragment_token_expired" >
+        <action
+            android:id="@+id/action_tokenExpiredFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/mobile_navigation"
+            app:popUpToInclusive="true"/>
+    </dialog>
 </navigation>

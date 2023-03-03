@@ -18,6 +18,7 @@ class DigiRepo @Inject constructor(private val myApi: MyApi) {
         jsonObject.addProperty("logUsername", email)
         jsonObject.addProperty("logUserpass", password)
         jsonObject.addProperty("force_delete_sessions", session)
+        jsonObject.addProperty("mobile_application", 1)
 
         return try {
             val response = myApi.getLoginResponse(jsonObject)
