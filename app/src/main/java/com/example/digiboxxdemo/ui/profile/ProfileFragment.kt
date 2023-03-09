@@ -65,7 +65,6 @@ class ProfileFragment : Fragment() {
                                 }
                             }
                         }
-                        Log.d(TAG, it.toString())
                     }
                 }
             }

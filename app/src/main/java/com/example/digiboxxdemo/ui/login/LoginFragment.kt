@@ -31,6 +31,10 @@ import javax.inject.Inject
 @AndroidEntryPoint
 class LoginFragment : Fragment() {
 
+    companion object {
+        const val TAG = "LoginFragment"
+    }
+
     private var _binding: FragmentLoginBinding? = null
 
     // This property is only valid between onCreateView and
@@ -51,6 +55,7 @@ class LoginFragment : Fragment() {
         lifecycleScope.launch {
             viewModel.loginResponse.collectLatest {
                 if (it != null) {
+
                     when (it.status_code) {
                         400 -> {
                             withContext(Dispatchers.Main) {
@@ -62,7 +67,6 @@ class LoginFragment : Fragment() {
                                 binding.edtPassword.error = it.message
                             }
                         }
-
                         206 -> {
                             viewModel.getLoginData(
                                 binding.edtEmailAddress.text.toString(),
@@ -77,6 +81,7 @@ class LoginFragment : Fragment() {
                             findNavController().navigate(action)
                             Log.d("APIResponse", it.toString())
                         }
+                        else -> Log.d(TAG, it.toString())
                     }
                 }
             }
@@ -137,24 +142,11 @@ class LoginFragment : Fragment() {
         })
 
         binding.btnLogin.setOnClickListener {
-
             viewModel.getLoginData(
                 binding.edtEmailAddress.text.toString(),
                 binding.edtPassword.text.toString(),
                 0
             )
-
-//            viewLifecycleOwner.lifecycleScope.launchWhenCreated {
-//                repeatOnLifecycle(Lifecycle.State.STARTED) {
-//                    val jsonObject = jsonObject(binding.edtEmailAddress.text.toString(), binding.edtPassword.text.toString(),0)
-//
-//                    val response = myApi.getLoginResponse(
-//                        jsonObject
-//                    )
-//                    Log.d("APIResponse", response.toString())
-//                    responseValidator(response, jsonObject)
-//                }
-//            }
         }
     }
 

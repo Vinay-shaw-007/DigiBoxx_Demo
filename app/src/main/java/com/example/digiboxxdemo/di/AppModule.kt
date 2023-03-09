@@ -2,6 +2,7 @@ package com.example.digiboxxdemo.di
 
 import com.example.digiboxxdemo.Constant.BASE_URL
 import com.example.digiboxxdemo.retrofit.ApiCall
+import com.example.digiboxxdemo.retrofit.Client
 import com.example.digiboxxdemo.retrofit.MyApi
 import dagger.Module
 import dagger.Provides
@@ -24,5 +25,14 @@ object AppModule {
             .addConverterFactory(GsonConverterFactory.create())
             .build()
             .create(MyApi::class.java)
+    }
+
+    @Singleton
+    @Provides
+    fun getRetroInstance1(apiCall: ApiCall): Client {
+        return Retrofit.Builder()
+            .baseUrl(BASE_URL)
+            .build()
+            .create(Client::class.java)
     }
 }
